@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container flex">
+        <div class="flex">
+            <h1 style="color: white;">Life video</h1>
+        </div>
+        <div class="flex-row">
+            <div class="video shadow">
+                <img src="{%url 'video'%}" alt="">
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>date</th>
+                            <th>Percentage</th>
+                            <th>File</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table">
+                        {% for i in data %}
+                        <tr>
+                            <td>{{i.date}}-{{i.time}}</td>
+                            <td>{{i.percentage|floatformat:2}}</td>
+                            <td>
+                                <a class="Dvideo" href="{{i.file.url}}">Video</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

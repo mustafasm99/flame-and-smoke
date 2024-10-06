@@ -1,0 +1,121 @@
+*
+{
+    max-width           : 100%;
+    /* background-color    : #f2f2f2; */
+    margin              : 0;
+    padding             : 0;
+    text-align          : center;
+}
+body
+{
+    width               : 100%;
+    overflow-x          : hidden;
+    background          : rgb(2,0,36);
+    background          : linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(32,0,88,0.5747549019607843) 60%, rgba(0,212,255,1) 93%);    
+    
+}
+.flex
+{
+    display             : flex;
+    flex-direction      : column;
+    justify-content     : center;
+    align-items         : center;
+    flex-wrap           : wrap;
+}
+.flex-row
+{
+    display             : flex;
+    flex-direction      : row;
+    justify-content     : center;
+    align-items         : center;
+    flex-wrap           : wrap;
+}
+.item
+{
+    width               : 250px;
+    height              : 250px;
+}
+.round
+{
+    border-radius       : 12px;
+}
+.shadow
+{
+    box-shadow          : rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.container
+{
+    width               : 100%;
+    margin              : 0 auto;
+    padding             : 20px;
+    background-color    : transparent;
+    filter: blur(0px);
+    /* position            : absolute;
+    left                : 50%;
+    top                 : 50%;
+    transform           : translate(-50% , -50%); */
+}
+.video
+{
+    width               : 520px;
+    height              : 500px;
+    border-radius       : 12px;
+    border              : 5px solid rgb(136, 67, 67);
+    margin              : 20px auto;
+}
+.video img
+{
+    width               : 100%;
+    height              : 100%;
+    object-fit          : cover;
+}
+.table
+{
+    width               : 100%;
+    height              : 100%;
+    position            : relative;
+    z-index             : 9;
+    background-color    : rgba(255, 255, 255, 0.185);
+    width               : fit-content;
+    padding             : 10px;
+    border-radius       : 12px;
+    /* filter              : blur(12px); */
+    flex                : 1;
+    flex-grow           : 1;
+    margin              : 20px;
+    height              : 580px;
+    overflow-y          : scroll;
+}
+.table::-webkit-scrollbar
+{
+    width               : 10px;
+    background-color    : transparent;
+}
+.table::-webkit-scrollbar-thumb
+{
+    background-color    : white;
+    border-radius       : 10px;
+}
+table,th,td,tr
+{
+    background-color    : transparent;
+    color               : white;
+    width               : 550px;
+    height              : 80px;
+}
+thead
+{
+    color               : white;
+    font-size           : 25px;
+    font-weight         : 750;
+    border-radius       : 12px;
+}
+.Dvideo
+{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10%;
+    background-color: white;
+    color: #020058;
+}
