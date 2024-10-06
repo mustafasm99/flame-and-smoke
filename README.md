@@ -39,3 +39,8 @@ This project aims to build a real-time fire and flame detection system using Con
    - Requests library (for handling HTTP requests)
    ```bash
    pip install tensorflow flask opencv-python requests
+   ```
+
+# final image to the project
+![Alt Text](project-image.jpg)
+
