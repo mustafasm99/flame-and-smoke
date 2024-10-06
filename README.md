@@ -42,5 +42,5 @@ This project aims to build a real-time fire and flame detection system using Con
    ```
 
 # final image to the project
-![Alt Text](project-image.jpg)
+<img src="project-image.jpg" width="300">
 
